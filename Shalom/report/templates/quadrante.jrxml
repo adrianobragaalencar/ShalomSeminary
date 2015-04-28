@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="quadrante" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b678a524-6eef-451c-af03-8bd9d7bc3c95">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="seminaryTitle" class="java.lang.String"/>
+	<field name="coupleName" class="java.lang.String"/>
+	<field name="husbName" class="java.lang.String"/>
+	<field name="husbEmail" class="java.lang.String"/>
+	<field name="husbBirthday" class="java.lang.String"/>
+	<field name="coupleWeddingDay" class="java.lang.String"/>
+	<field name="husbPhones" class="java.lang.String"/>
+	<field name="husbWork" class="java.lang.String"/>
+	<field name="wifeName" class="java.lang.String"/>
+	<field name="wifeEmail" class="java.lang.String"/>
+	<field name="wifeBirthday" class="java.lang.String"/>
+	<field name="wifePhones" class="java.lang.String"/>
+	<field name="wifeWork" class="java.lang.String"/>
+	<field name="couplePhoto" class="java.lang.Object"/>
+	<field name="coupleState" class="java.lang.String"/>
+	<field name="coupleCity" class="java.lang.String"/>
+	<field name="coupleNeighbor" class="java.lang.String"/>
+	<field name="coupleAddress" class="java.lang.String"/>
+	<field name="coupleZipcode" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="90" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="19" width="555" height="34" uuid="b492a31e-44ef-4504-8efd-af417c8c1c6a"/>
+				<textElement textAlignment="Center">
+					<font size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Seminário de Vida no Espírito Santo]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="53" width="555" height="37" uuid="5df10be9-9da2-42f3-92a9-e0ef934ff791"/>
+				<textElement textAlignment="Center">
+					<font size="20"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{seminaryTitle}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<detail>
+		<band height="248" splitType="Stretch">
+			<textField>
+				<reportElement x="14" y="15" width="236" height="37" uuid="26acd3c5-3e32-4d77-b16c-e3d897fd4a1f"/>
+				<textElement>
+					<font size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{coupleName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="14" y="52" width="36" height="20" uuid="7cbf6d69-8f94-4667-b0a6-966ef2fe55e4"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ele:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="50" y="52" width="188" height="20" uuid="35aad733-1df1-4c70-abf2-4fba59024800"/>
+				<textFieldExpression><![CDATA[$F{husbName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="14" y="72" width="36" height="20" uuid="9ba10433-e14a-4962-ad5f-a67706a68928"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Email:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="50" y="72" width="188" height="20" uuid="83f67a79-0071-469c-ba19-d202fd55de8e"/>
+				<textFieldExpression><![CDATA[$F{husbEmail}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="14" y="92" width="40" height="20" uuid="6b7d2bf5-5241-4338-a452-921a2c95f7fc"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Aniver:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="54" y="92" width="89" height="20" uuid="0be6d86b-ed59-4697-8b06-5b94ea6f32c7"/>
+				<textFieldExpression><![CDATA[$F{husbBirthday}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="261" y="15" width="83" height="37" uuid="7f5558a7-04fa-4c64-9e68-daf1e6f2181e"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Casamento:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="344" y="15" width="91" height="37" uuid="67122847-02ef-4e2b-a04b-bd18bca49d56"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{coupleWeddingDay}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="261" y="52" width="32" height="20" uuid="1f3ce797-6648-408c-b4c2-fffc8ba9a736"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Fone:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="293" y="52" width="142" height="20" uuid="cda16efa-2284-4bad-9ee1-516eaee44306"/>
+				<textFieldExpression><![CDATA[$F{husbPhones}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="261" y="72" width="32" height="20" uuid="4c2edaf6-35b5-44ca-ac6b-269847daf67a"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Prof.:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="293" y="72" width="142" height="20" uuid="19e8b477-a6ce-4370-bbd4-dcb17107c61a"/>
+				<textFieldExpression><![CDATA[$F{husbWork}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="14" y="127" width="36" height="20" uuid="6e9199e3-0cb6-476b-8d53-f1cd006a2f58"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ela:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="50" y="127" width="188" height="20" uuid="bbea5e8a-45b8-4ad1-9611-2e4f84bb8100"/>
+				<textFieldExpression><![CDATA[$F{wifeName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="14" y="147" width="36" height="20" uuid="36a2b079-1bca-4709-bacd-c4bbc7408737"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Email:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="50" y="147" width="188" height="20" uuid="a483a888-a37c-4312-93aa-a2d095a2e8db"/>
+				<textFieldExpression><![CDATA[$F{wifeEmail}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="14" y="167" width="40" height="20" uuid="d55871a0-3de4-4b04-8c79-cf7b2e594d44"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Aniver:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="54" y="167" width="89" height="20" uuid="cf633bbc-5f09-423c-aee2-37327980fecd"/>
+				<textFieldExpression><![CDATA[$F{wifeBirthday}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="261" y="127" width="32" height="20" uuid="230217f0-ddbc-4d54-a064-97fc5ef5c376"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Fone:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="293" y="127" width="142" height="20" uuid="0c533a86-5c7e-4579-9c43-1fee056fa2e9"/>
+				<textFieldExpression><![CDATA[$F{wifePhones}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="261" y="147" width="32" height="20" uuid="ec2a42f5-c356-47a9-bbfd-acb3c2c0253a"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Prof:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="293" y="147" width="142" height="20" uuid="97d067e8-9c44-4720-abc8-d83758a6c03a"/>
+				<textFieldExpression><![CDATA[$F{wifeWork}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="1" width="550" height="1" uuid="1a10f300-fc3f-419c-ad39-5aa8e8efae98"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="0" y="4" width="550" height="1" uuid="806b51a6-56e3-4043-bea8-eabae6b05a33"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</line>
+			<elementGroup>
+				<image scaleImage="FillFrame">
+					<reportElement stretchType="RelativeToTallestObject" x="442" y="15" width="113" height="152" uuid="2c01615b-86c5-459b-bcfd-fe1d217a37f4"/>
+					<imageExpression><![CDATA[$F{couplePhoto}]]></imageExpression>
+				</image>
+			</elementGroup>
+			<staticText>
+				<reportElement x="109" y="222" width="26" height="20" uuid="6ce3f041-235e-4834-93dd-aa0dd14b719b"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[UF:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="135" y="222" width="26" height="20" uuid="bffe253d-1855-4aed-b2e0-242284dafeee"/>
+				<textFieldExpression><![CDATA[$F{coupleState}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="166" y="222" width="44" height="20" uuid="06e3e707-5a0a-4ffb-8d14-c05bb322b60b"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cidade:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="210" y="222" width="186" height="20" uuid="e9ed13ba-236a-40b1-b18d-c71ccd0b14cb"/>
+				<textFieldExpression><![CDATA[$F{coupleCity}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="14" y="202" width="60" height="20" uuid="90120e85-48a5-4db3-8c9c-ff63bea05e16"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Endereço:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="74" y="202" width="164" height="20" uuid="c238ad54-5a34-41c1-a10a-efc1c5cd4946"/>
+				<textFieldExpression><![CDATA[$F{coupleAddress}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="238" y="202" width="40" height="20" uuid="f8c93c38-aef7-460f-ad3f-2b4dd9d5fd1c"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Bairro:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="278" y="202" width="127" height="20" uuid="fcece247-8d43-4b50-97cb-8a96e410c941"/>
+				<textFieldExpression><![CDATA[$F{coupleNeighbor}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="14" y="222" width="32" height="20" uuid="24c77ee7-9a67-49d4-ae01-b65ee70b6df7"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cep:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="46" y="222" width="63" height="20" uuid="c8d1d0a1-e5fb-463c-8db6-28b870cfbf79"/>
+				<textFieldExpression><![CDATA[$F{coupleZipcode}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<textField>
+				<reportElement x="455" y="34" width="100" height="20" uuid="6cdde14c-99b0-4841-b6c7-423554a6d9f4"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="234" y="34" width="100" height="20" uuid="0e1c365a-6310-458f-b829-41b1805981e6"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<lastPageFooter>
+		<band height="50">
+			<staticText>
+				<reportElement x="0" y="30" width="210" height="20" uuid="b43eece7-3222-4017-9830-6a8abe798972"/>
+				<textElement>
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[www.yattatech.com]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="234" y="30" width="100" height="20" uuid="98f2e510-2d70-4d57-9c95-d0a73714774f"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="455" y="30" width="100" height="20" uuid="2035a970-1f6b-4494-9759-d3565f26ada2"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</lastPageFooter>
+</jasperReport>
